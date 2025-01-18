@@ -1,9 +1,12 @@
 import React from 'react';
 
 function RightSection({ image, title, description }) {
+    const handleClick=()=>{
+        window.location.href = 'https://stocks-dashoard.vercel.app';
+    }
     return (
         <div className='container mb-5'>
-            <div className='row align-items-center'>
+            <div className='row align-items-center' onClick={handleClick}style={{ cursor: 'pointer' }}>
                 {/* Text Section */}
                 <div className='col-lg-4 col-sm-12 mb-4'>
                     <h1 className='mb-3'>{title}</h1>

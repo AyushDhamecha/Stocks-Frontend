@@ -6,7 +6,7 @@ function LeftSection({ image, title, description, trydemo, learnmore, googleplay
     }
     return (
         <div className='container mb-5'>
-            <div className='row' onClick={handleClick}>
+            <div className='row' onClick={handleClick}style={{ cursor: 'pointer' }}>
                 {/* Image Column */}
                 <div className='col-lg-8 col-sm-12 my-5 order-1 order-lg-0'>
                     <img src={image} alt="leftimage" className='img-fluid' />
